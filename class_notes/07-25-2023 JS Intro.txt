@@ -1,0 +1,86 @@
+
+07-25-2023 JS Intro
+Computer:
+A computer is an electronic machine that is used to input, process, and then output data, 
+typically in binary form, according to instructions given to it in a variable program.
+Computer is consist of software and hardware.
+    Software: Operatings systems, Microsoft Office Suite, Paint, application
+    Hardware: Mouse, screen, printer, hard-disk, CPU
+
+
+|||||||||||||||||||||   -> oldest way of number system
+0 1 2 3 4 5 6 7 8 9     -> base-10 number system
+
+
+Binary code: ones and zeros
+-Known as base-2 number system
+1=ON
+0=OFF 
+
+-It is the machine language what computer understands
+-All the letters, digits, shapes and more are converted to binary code to be understood and 
+processed by computer.
+
+
+-machine
+-input
+-output
+-code
+-data
+-binary code
+
+10100011
+
+Binary Units:
+Bit: one or zero
+byte: 8 bits
+kilobyte: 1024 bytes
+
+
+
+MAC: cmd -> command
+Windows: CTRL -> control
+
+
+CAT != Cat != cat != CAt
+
+a != A
+
+
+
+Programming language: -A programming language is a vocabulary and set of 
+grammatical rules for instructing a computer or computing device to perform specific tasks.
+
+-You can create apps
+-communication with the machine
+-has rules (SYNTAX)
+-Examples: JavaScript, Java, Go, Phyton, C#
+
+
+interpreted languages: JavaScript
+compiled languages: lack ambiguity - confusion - conflict
+
+
+compilation - compile - compiler    -> checking if your code is grammatically correct
+execution - execute - executor      -> running the code
+
+
+INSTALL node.js and check the version
+1. Download it from https://nodejs.org/en/download
+2. MAC: open Terminal and run "node -v"
+   WINDOWS open command prompt and run "node -v"
+
+
+
+COMMENTS 
+/*
+Multi-line comments
+*/
+
+// Single line comment
+
+console.log(); // this is a coding statement
+
+NOTE: It is recommended to put ; after every coding statement (JS)
+
+console.log() is used to output text and data to console.
