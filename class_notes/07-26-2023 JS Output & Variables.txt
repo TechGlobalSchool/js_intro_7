@@ -1,0 +1,21 @@
+
+
+RECAP:
+Computer: machine -> input-process-output
+    softwares + hardwares
+
+Binary code: computer language that consists of ones and zeros
+
+
+Programming languages: JavaScript, Java, C, C++, Go
+Source code: it is code that is written with any programming language
+    console.log("Hello World"); // coding statement
+
+
+COMMENTS:
+// single-line comment
+
+
+
+
+
