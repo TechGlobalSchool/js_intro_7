@@ -1,0 +1,91 @@
+
+
+
+07-29-2023 JS Data Types & Operators
+
+RECAP:
+Output statement: console.log()
+
+let age = 45;
+
+console.log("Age is " + age); // "Age is 45"
+
+Concatenation => putting together strings or strings with variables
++ is used for Concatenation and addition (Math operator)
+
+number + number     -> Math - addition
+string + number     -> Concatenation
+number + string     -> Concatenation
+string + string     -> Concatenation
+
+
+VARIABLES 
+var: was used before ES6 (2015)
+let: mutable-can be changed-not final
+const: immutable-cannot be changed-final
+
+
+pi, gravity, 
+
+let age; // declare
+
+age = 25; // assign
+
+
+
+
+const red = "red"; // declared and initialized
+
+const pi; // ERROR
+
+pi = 3.14;
+
+
+
+const name, age; // false
+let n1 = 45, n2; //  true
+const num1 = 45, num2; // false
+let x, let y; // false
+let a; let b; // true but not preferred
+let i1; i2; // false
+
+
+
+declaration         let name;
+assignment          name = "";
+re-assignment       name = "John";
+initialization      let age = 45;
+
+
+IT: Information Technology
+information: data
+
+
+DATA TYPES: 
+string: email, name, lname, address, ssn...
+    we store strigns in double quotes, single quotes
+
+numbers: age, prices, quantity...
+    whole numbers: 10, 5
+    floating numbers: 10.5, 1.234234
+
+boolean: true or false
+
+credentials: username and password
+
+
+if(username.isCorrect()) {
+    if(password.isCorrect()){
+        // login
+    }
+    else{
+        // WRONG PASSWORD
+    }
+}
+else{
+    // WRONG USERNAME
+}
+
+
+
+
