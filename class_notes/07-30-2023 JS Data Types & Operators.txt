@@ -111,3 +111,68 @@ variable++; // variable value does not change in this line but it will be increa
 variable--; // variable value does not change in this line but it will be decreased by1 next time
 ++variable; // variable value increased by 1 and it is new value to be used after that
 --variable; // variable value decreased by 1 and it is new value to be used after that
+
+
+
+COMPARISON OPERATORS
+==      compare ONLY values and return true if they are equal
+===     compare both values and data types and return true if both values and data types are equal
+
+"3" == 3    -> true
+"2" === 2   -> false
+"3" === "3" -> true
+2 === 2     -> true
+5 == 5      -> true
+
+
+
+3 + "5"     -> 35
+
+true    -> 1
+false   -> 0
+null    -> 0
+""      -> 0
+
+
+LOGICAL OPERATORS 
+AND     &&
+OR      ||
+NOT     !
+
+
+3 < 5 && true       -> true
+2 == 2 && 1 > 5     -> false
+
+My age is 30 AND 25     -> false
+My age is 29 OR 30      -> true
+
+
+AND
+true   &&   true    -> true
+false  &&   true    -> false
+true   &&   false   -> false
+false  &&   false   -> false
+
+
+2 < 1 && 1 > 10     -> false
+true && !true       -> false
+true && !false && 2 === "2" -> false
+
+
+OR
+false || false      -> false
+true  || false      -> true
+false || true       -> true
+true  || true       -> true
+
+
+!false || false     -> true
+2 + 5 <= 7 || 5 > 10    -> true
+
+
+NOT
+!(2 == 2 && 5 == "5" && 5 < 10)     -> false
+!false                              -> true
+
+
+
