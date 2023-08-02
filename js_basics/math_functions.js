@@ -62,4 +62,12 @@ console.log(Math.ceil(Math.random() * 10));
 
 
 // Homework: Come up with a way to generate a random number between 10 and 20 (both included)
+console.log(Math.floor(Math.random() * 11) + 10); // 
+console.log(Math.ceil(Math.random() * 11) + 9); // 
+console.log(Math.round(Math.random() * 10 + 10)); // 
 
+
+// Come up with a way to generate a random number between x and y (both included)
+// Math.floor(Math.random() * (y - x + 1)) + x
+// Math.ceil(Math.random() * (y - x)) + x - 1
+// Math.round(Math.random() * (y - x) + x)
