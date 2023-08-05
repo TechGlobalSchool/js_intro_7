@@ -110,3 +110,14 @@ TASK: Returns the position of the last occurrence of a substring.
 RETURN: returns the position
 DATA TYPE: number
 
+// Extracting Sub-strings from strings
+"Hello" -> "He" 
+"Hello World" -> "Hello"
+"I like JS" -> "like"
+
+
+slice() vs substring()
+-These 2 methods are used for Extracting substrings from another string.
+-Difference: slice() does accept negative indexes and will try Extracting a substring backward
+             substring() sees negative numbers as zero
+
