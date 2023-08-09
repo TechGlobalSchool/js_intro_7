@@ -94,4 +94,21 @@ console.log(getRandomNumber(0, 1));
 /*
 Write a function called average5 that takes 5 arguments and returns their average
 
+
+average5(1, 2, 3, 4, 5)     -> 3
+average5(3, 7, 10, 5, 5)     -> 6
 */
+
+function average5(n1, n2, n3, n4, n5){
+    return (n1 + n2 + n3 + n4 + n5) / 5;
+}
+
+console.log(average5(1, 2, 3, 4, 5));
+console.log(average5(3, 7, 10, 5, 5));
+
+
+// TRICKY PART
+console.log(average5("1", "2", "3", "4", "5")); // 2469
+console.log(average5("1", 2, 3, 4, 5)); // 2469
+console.log(average5(1, 2, 3, 4, "5")); // 21
+console.log(average5(1, 2, "3", 4, 5)); // 669
