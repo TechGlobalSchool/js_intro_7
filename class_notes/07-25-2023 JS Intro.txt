@@ -4,7 +4,7 @@ Computer:
 A computer is an electronic machine that is used to input, process, and then output data, 
 typically in binary form, according to instructions given to it in a variable program.
 Computer is consist of software and hardware.
-    Software: Operatings systems, Microsoft Office Suite, Paint, application
+    Software: Operating systems, Microsoft Office Suite, Paint, application
     Hardware: Mouse, screen, printer, hard-disk, CPU
 
 

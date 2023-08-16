@@ -45,3 +45,7 @@ cd %userprofile% : move to the home directory
 
 GIT vs GitHub
 Git is a version control system
+
+
+Linking a local folder/project to GitHub repository
+git init -> that initialize your project with git
