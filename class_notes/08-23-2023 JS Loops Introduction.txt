@@ -1,0 +1,59 @@
+
+
+08-23-2023 JS Loops Introduction
+
+
+RECAP:
+Array: Collection to store multiple values / elements / data (string, number, object)
+
+Array functions: These are built-in functions provided to manipulate the data stored in the array.
+
+Adding/removing elements:
+                TASK                                                    ARGUMENT        RETURN              CHANGE TO ORIGINAL?
+pop()       ->  removes and returns the last element                    zero            last element        YES
+push()      ->  adds element to the end and returns new length          element/s       new length          YES   
+shift()     ->  removes and returns the first element                   zero            first element       YES          
+unshift()   ->  adds element to the first index and returns new length  element/s       new length          YES
+splice()    ->  adds or removes elements for the specified index        index/#/el      removed element/s   YES
+
+
+Searching elements:
+                TASK                                                    ARGUMENT        RETURN              CHANGE TO ORIGINAL?
+indexOf()   ->  checks if the array has the element and returns index   element         index               NO
+lastIndexOf()-> checks if the array has the element and returns index   element         last index          NO
+includes()  ->  checks if the array has the element and returns boolean element         boolean             NO
+
+
+Fetching sub-arrays from an array:
+                TASK                                                    ARGUMENT        RETURN              CHANGE TO ORIGINAL?
+slice()     ->  fetches a new sub-array from the original array         index/es        new array           NO
+
+
+Merging Arrays:
+                TASK                                                    ARGUMENT        RETURN              CHANGE TO ORIGINAL?
+concat()    ->  merges multiple arrays together                         array/s         new array           NO
+
+
+Reversing Arrays:
+                TASK                                                    ARGUMENT        RETURN              CHANGE TO ORIGINAL?
+reverse()   ->  reverses the array backward                             zero            same array reversed YES           
+
+
+Sorting Arrays:
+                TASK                                                    ARGUMENT        RETURN              CHANGE TO ORIGINAL?
+sort()      ->  sorting elements alphabetically                         zero            same array sorted   YES 
+
+
+Flattening Arrays:
+                TASK                                                    ARGUMENT        RETURN              CHANGE TO ORIGINAL?
+flat()      ->  flattens the array                                      zero/number     new array           NO
+
+
+Converting Arrays to string data type:
+                TASK                                                    ARGUMENT        RETURN              CHANGE TO ORIGINAL?
+toString()  ->  returns the array elements to a string (coma separated) zero            string              NO 
+join()      ->  returns the array elements to a string (coma or any)    zero/string     string              NO 
+
+
+
+LOOPS 

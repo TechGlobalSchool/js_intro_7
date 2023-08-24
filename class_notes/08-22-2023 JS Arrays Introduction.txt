@@ -1,6 +1,6 @@
 
 
-08-22-2023 Arrays Introduction & Loops
+08-22-2023 Arrays Introduction
 
 RECAP:
 -Collection of elements/values
