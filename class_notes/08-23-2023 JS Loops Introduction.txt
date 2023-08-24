@@ -57,3 +57,30 @@ join()      ->  returns the array elements to a string (coma or any)    zero/str
 
 
 LOOPS 
+JS loops are used to execute a block of code repeatedly.
+Loops will execute until a termination condition is met.
+Loops are helpful to eliminate duplicating codes and time-effort saving.
+JS supports different kinds of loops:
+    for - loops through a block of code a number of times.
+    for/in - loops through the properties of an object.
+    for/of - loops through the values of an iterable object.
+    while - loops through a block of code while a specified condition is true.
+    do/while - also loops through a block of code while a specified condition is true.
+
+
+1. For Loop
+The for statement creates a loop with 3 expressions:
+
+for(expression1; expression2; expression3){
+    // code block to execute
+}
+
+Example:
+for (let i = 1; i <= 5; i++) {
+    console.log(i);
+}
+
+Expression 1 is executed (one time) before the execution of the code block.
+Expression 2 defines the condition for executing the code block.
+Expression 3 is executed (every time) after the code block has been executed.
+
