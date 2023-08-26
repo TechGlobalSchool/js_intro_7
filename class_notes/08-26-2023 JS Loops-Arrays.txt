@@ -1,0 +1,36 @@
+
+
+
+08-26-2023 JS Loops-Arrays
+
+Loops: 
+
+
+1. For Loop
+for(let i = 0; i < 10; i++){
+    console.log(i);
+}
+
+
+2. While Loop
+3. Do-while Loop 
+4. For...of Loop
+5. For..in Loop
+
+
+Infinite loop: That is a loop never stops due to a logical mistake and termination point is never met.
+
+for(; ;){
+    // Infinite loop
+}
+
+
+
+i % 3 === 0 && i % 5 === 0              =>              i % 15 === 0
+
+first game -> 8 attempts
+first game -> 4 attempts
+first game -> 3 attempts
+
+
+
