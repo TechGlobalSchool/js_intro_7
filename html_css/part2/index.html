@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basic 2</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+        table, td, th {
+            /* border-width: 2px;
+            border-color: black;
+            border-style: solid; */
+
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+
+        th {
+            background-color: rgb(169, 169, 169);
+        }
+
+        tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        tr:hover {
+            opacity: 25%;
+        }
+
+        #submit {
+            width: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tables</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Last Name</th>
+                <th>First Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Doe</td>
+                <td>John</td>
+                <td>jdoe@yahoo.com</td>
+            </tr>
+            <tr>
+                <td>Jones</td>
+                <td>Alex</td>
+                <td>ajones@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Smith</td>
+                <td>Adam</td>
+                <td>adamsmith@techglobal.com</td>
+            </tr>
+            <tr>
+                <td>Smith</td>
+                <td>Adam</td>
+                <td>adamsmith@techglobal.com</td>
+            </tr>
+            <tr>
+                <td>Smith</td>
+                <td>Adam</td>
+                <td>adamsmith@techglobal.com</td>
+            </tr>
+            <tr>
+                <td>Smith</td>
+                <td>Adam</td>
+                <td>adamsmith@techglobal.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h1>Forms</h1>
+    <form action="#">
+        <p>
+            <label for="username">Username:</label>
+            <input type="username">
+        </p>
+        <p>
+            <label for="password">Password:</label>
+            <input type="password">
+        </p>
+        <p>
+            <label for="text">Text:</label>
+            <input type="text">
+        </p>
+        <p>
+            <label for="language">What languages you know of</label>
+            <br>
+            <label for="js">JS</label>
+            <input type="checkbox">
+            <label for="java">Java</label>
+            <input type="checkbox">
+        </p>
+        <p>
+            <label for="gender">Please select your gender</label>
+            <br>
+            <label for="female">Female:</label>
+            <input id="female" type="radio" name="gender"> | 
+            <label for="male">Male:</label>
+            <input id="male" type="radio" name="gender"> | 
+            <label for="n/a">No answer:</label>
+            <input id="n/a" type="radio" name="gender">
+        </p>
+        <label for="reference">Anything you want to share?</label>
+        <br>
+        <textarea name="" id="" cols="30" rows="10" placeholder="You can share all of your thoughts here!"></textarea>
+        <p>
+            <input id="submit" type="submit">
+        </p>
+    </form>
+    <hr>
+    <h1>Dropdowns</h1>
+    <select name="color">
+        <!-- <option value="color" hidden>Color</option> Option 1, disable by 'hidden' attributes--> 
+        <option value="color" disabled selected>Color</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="black">Black</option>
+    </select>
+</body>
+</html>
