@@ -8,4 +8,20 @@ ES6 = ECMAScript2015 or ES2015
 Primitive data types can not be reassigned when declared with const keyword
 But non-primitive data types (object, arrays) can be reassigned (values can be changed) with const keyword
 
+2. Template Literals
+3. Arrow functions
+4. Enhanced Object Literal
+5. Array and Object Destructuring
+6. Rest and Spread Operators
 
+Spread Operators => remove brackets [1,2,3] => 1,2,3
+Rest Operators => add brackets 1,2,3 => [1,2,3]
+
+7. Default function arguments
+
+function stuff(arg = "url") { // Default argument
+    console.log(arg);
+}
+stuff(); // 'url'
+stuff('url1'); // 'url1'
+stuff('url2'); // 'url2'
