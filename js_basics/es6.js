@@ -248,6 +248,32 @@ const { A, B, ...restKeyVal} = obj5;
 console.log(A, B, restKeyVal);
 
 
+const map = (arr, cb) => {
+    // const newArr = new Array;
+    for (let number of arr) {
+        const newNum = cb(number);
+        let idx = arr.indexOf(number);
+        // newArr.push(newNum);
+        arr[idx] = newNum;
+    }
+    // return newArr;
+    return arr;
+};
+const arr = [1,2,3]
+
+const double = (num) => num * 2;
+const increment = (num) => num + 1;
+
+console.log(map(arr, double)); // [2, 4, 6]
+console.log(map(arr, increment)); // [2, 3, 4]
+
+const multiply = (arr8) => {
+    //  you should modify arr8
+
+    return;
+}
+
+
 
 
 
