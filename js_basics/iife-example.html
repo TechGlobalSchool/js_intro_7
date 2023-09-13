@@ -24,17 +24,16 @@
     <hr>
     <h3>To be able to see 'I am NOT an IIFE' text, you need to invoke <code>notIIFE()</code> function because it's NOT an IIFE.</h3>
     <h3>To invoke, write <code>notIIFE()</code> to the console and hit enter.</h3>
+    <script>
+        // You'll see 'I am an IIFE' in the browser log as soon as you start the live server. 
+        (function () {
+            console.log("I am an IIFE");
+        })();
+    
+        // You won't be able to see regular function until you call it in the browser log.
+        function notIIFE() {
+            console.log("I am NOT an IIFE");
+        }
+    </script>
 </body>
-<script>
-    // You'll see 'I am an IIFE' in the browser log as soon as you start the live server. 
-    (function () {
-        console.log("I am an IIFE");
-    })();
-
-    // You won't be able to see regular function until you call it in the browser log.
-    function notIIFE() {
-        console.log("I am NOT an IIFE");
-    }
-</script>
-
 </html>
