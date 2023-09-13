@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        pre, code {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>IIFE Example</h1>
+    <h3>Open up the browser console, you'll see 'I am an IIFE' in the logs. </h3>
+    <h3>Because, it's an IIFE(Immediately Invoked Function Expression):</h3>
+    <pre>
+        (function () {
+            console.log("I am an IIFE");
+        })();
+    </pre>
+    <hr>
+    <h3>To be able to see 'I am NOT an IIFE' text, you need to invoke <code>notIIFE()</code> function because it's NOT an IIFE.</h3>
+    <h3>To invoke, write <code>notIIFE()</code> to the console and hit enter.</h3>
+</body>
+<script>
+    // You'll see 'I am an IIFE' in the browser log as soon as you start the live server. 
+    (function () {
+        console.log("I am an IIFE");
+    })();
+
+    // You won't be able to see regular function until you call it in the browser log.
+    function notIIFE() {
+        console.log("I am NOT an IIFE");
+    }
+</script>
+
+</html>
