@@ -28,7 +28,7 @@ console.log(countPos([-23, -4, 0, 2, 5, 90, 123]))
 console.log(countPos([0, -1, -2, -3]))
 
 // Task 2
-​/*
+/*
 Requirement:
 Write a function named countA() which takes a string 
 argument and returns how many A or a there are in the 
@@ -152,9 +152,9 @@ const countWords = (str) => {
 console.log(countWords2("     Javascript is fun       "))
 console.log(countWords2("Cypress is an UI automation tool.    "))
 console.log(countWords2("1234"))
-console.log(countWords("     Javascript is fun       "));
-console.log(countWords("Cypress is an UI automation tool.    "));
-console.log(countWords("1 2 3 4"));
+console.log(countWords2("     Javascript is fun       "));
+console.log(countWords2("Cypress is an UI automation tool.    "));
+console.log(countWords2("1 2 3 4"));
 
 // Task 6
 /*
@@ -320,7 +320,7 @@ console.log(count3OrLess("My name is John Doe"))//3
 console.log(count3OrLess(""))//0
 
 // Task 10
-​/*
+/*
 Requirement:
 Write a function named as isPrime() which takes a 
 number as an argument and returns true if the number 
