@@ -197,4 +197,75 @@ p.name  // undefined
 getName() // Joe
 
 
+/**
+ * Activity
+ */
+
+class Course {
+    constructor(title, length, price) { // ideally rename this price as well
+        this.title = title;
+        this.length = length;
+        this._price = price;
+    }
+
+    // getPrice() { } regular function and also OK
+    // getter
+    get price() {
+        return '$' + this._price;
+    }
+    // setter
+    set price(val) {
+        if(val < 0) {
+            console.log('Invalid value')
+        } 
+        this._price = val;
+    }
+    calcLenToPriceValue() {
+        return this.length / this.price; // When $ added this will print NaN
+    }
+    printSummary() {
+        return `${this.title} lasts ${this.length} and costs ${this.price}`;
+    }
+}
+
+const jsCourse = new Course('JavaScript Course', 6, 8000);
+const cypressCourse = new Course('Cypress Course', 3, 4000);
+
+console.log(jsCourse); // Course { title: 'JavaScript Course', length: 6, price: 8000 }
+console.log(cypressCourse); // Course { title: 'Cypress Course', length: 3, price: 4000 }
+
+console.log(jsCourse.calcLenToPriceValue()) // 0.00075
+console.log(jsCourse.printSummary()) // JavaScript Course lasts 6 and costs 8000
+
+console.log(cypressCourse.calcLenToPriceValue()) // 0.00075
+console.log(cypressCourse.printSummary()) // Cypress Course lasts 3 and costs 4000
+
+console.log(jsCourse.price); // $4000
+jsCourse.price = 7000; 
+console.log(jsCourse.price); // $7000
+
+
+console.log('----------');
+
+class PracticalCourse extends Course {
+    constructor(title, length, price, numOfExercises) {
+        super(title, length, price);
+        this.numOfExercises = numOfExercises;
+    }
+}
+
+const pCourse = new PracticalCourse('Practical Course', 2, 1000, 12);
+console.log(pCourse) // PracticalCourse { title: 'Practical Course', length: 2, price: 1000, numOfExercises: 12 }
+console.log(pCourse.printSummary()); // Practical Course lasts 2 and costs 1000
+
+class TheoreticalCourse extends Course {
+    publish() {
+        return 'Course published today!';
+    }
+}
+
+const tCourse = new TheoreticalCourse('SDLC', 3, 1500);
+console.log(tCourse); // TheoreticalCourse { title: 'SDLC', length: 3, price: 1500 }
+console.log(tCourse.publish()); // Course published today!
+console.log(tCourse.printSummary()); // SDLC lasts 3 and costs 1500
 
