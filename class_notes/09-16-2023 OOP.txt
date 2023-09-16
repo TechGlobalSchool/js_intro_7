@@ -1,3 +1,19 @@
 OOP
 
 Everything around object
+
+Prototypical Inheritance can be implemented in 3 ways in JS:
+1. Constructor functions
+2. Classes
+3. Object create (not a best solution in terms of intuitiveness)
+
+Getters and Setters: https://www.programiz.com/javascript/getter-setter
+
+
+Classes can have:
+- Constructor
+- static or private properties
+
+Inheritance
+"Constructor functions" and use prototype to achieve inheritence
+"Classes" can use extends keyword and super function to achieve inheritence
