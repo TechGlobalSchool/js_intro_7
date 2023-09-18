@@ -9,12 +9,17 @@ class Character {
         this.strength  = strength;
         this.hitpoints = hitpoints;
     }
-
+    /**
+     * @returns null
+     */
     printStats() {
         console.log(`My name is ${this.name}, profession is ${this.profession} my gender is ${this.gender}
         age is ${this.age} i have that much power ${this.strength} and my hit point ${this.hitpoints}`);
     }
 
+    /**
+     * @returns boolean
+    */
     isAlive() {
         if(this.hitpoints > 0) {
             console.log(`${this.name} is alive`);
@@ -24,10 +29,17 @@ class Character {
         return false;
     }
 
+    /**
+     * @argument object
+     * @returns null
+    */
     attack(attackedCharacter){
         attackedCharacter.hitpoints -= this.strength;
     }
 
+    /**
+     * @returns null
+    */
     levelUp() {
         this.age += 1;
         this.strength += 5;
