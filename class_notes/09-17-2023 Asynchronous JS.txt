@@ -28,3 +28,7 @@ This object has 3 states:
 When you resolve the promise use: then and catch 
 then() => when promise is Fullfilled
 catch() => when promise is failed
+
+
+Async await Error Handling
+    - use try catch block

@@ -156,9 +156,6 @@ function downloadImage(url) {
 }
 
 const url1 = 'https://example.com/1.jpg';
-// downloadImage(url1)
-// .then() // resolved
-// .catch() // rejected
 
 downloadImage(url1)
 .then((res) => {
@@ -166,3 +163,113 @@ downloadImage(url1)
     console.log(`Processing image from ${url1} ...`);
 })
 .catch((err) => {console.log(err)}) 
+
+
+
+console.log('go to url');
+
+setTimeout(() => {
+    console.log('find button'); // delay
+}, 2000);
+
+console.log('assert btn text is SEARCH');
+
+// callback
+
+function goToUrl() {
+    console.log('go to url');
+}
+
+function findBtn(callback) {
+    setTimeout(() => {
+        console.log('find button'); // delay
+        // assert
+        callback();
+    }, 2000);
+}
+
+function assertBtnText() {
+    console.log('assert btn text is SEARCH');
+}
+
+goToUrl();
+findBtn(assertBtnText);
+// findBtn(assertBoxText);
+
+// Callback Hell
+
+// Promise ?
+
+
+function goToUrl2() {
+    console.log('go to url');
+}
+
+function findBtn2() {
+   return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            // resolve('find button');
+            reject('can\'t find button');
+        }, 2000);
+   })
+}
+
+function assertBtnText2() {
+    console.log('assert btn text is SEARCH');
+}
+
+goToUrl2();
+findBtn2()
+.then(res => {
+    // make sure i find the button
+    console.log(res);
+    // then assert
+    assertBtnText2();
+})
+.catch(err => {
+    console.log('err while finding button', err);
+})
+
+// Async Await
+
+async function getData() {
+    return 'Some Data';
+}
+
+console.log(getData());
+
+// await keyword => helps to resolve async result
+
+function goToUrl3() {
+    console.log('go to url');
+}
+
+function findBtn3() {
+   return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            // resolve('find button');
+            reject('can\'t find button');
+        }, 2000);
+   })
+}
+
+function assertBtnText3() {
+    console.log('assert btn text is SEARCH');
+}
+
+goToUrl3();
+async function main() {
+    try {
+        let res = await findBtn3();
+        console.log("res", res);
+        assertBtnText3();
+    } catch(err) {
+        console.log('error while finding button', err)
+    }
+
+}
+main();
+
+// try catch
+
+
