@@ -1,4 +1,4 @@
-DOM
+DOM - DOCUMENT OBJECT MODEL
 
 window object
     Lets see what is window object when we run code runner?
@@ -25,7 +25,7 @@ localStorage
     Your data will live in localStorage indefinitely
     When storing object and array we have to use JSON.stringify() to convert to string and JSON.parse() convert from string
     To remove item from localStorage use => localStorage.removeItem(name)
-    
+
 
 
 

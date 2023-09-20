@@ -32,10 +32,10 @@ console.log("height", innerHeight); // without window
 console.log(window.localStorage.length); // 0 empty
 
 // Set item into localStorage
-window.localStorage.setItem('name', 'John'); 
-window.localStorage.setItem('isLoggedIn', false); 
-window.localStorage.setItem('userId', 1234); 
-window.localStorage.setItem('userInfo', JSON.stringify({ name: 'John', email: 'john@gmail.com'}));
+window.localStorage.setItem('name', 'John');
+window.localStorage.setItem('isLoggedIn', false);
+window.localStorage.setItem('userId', 1234);
+window.localStorage.setItem('userInfo', JSON.stringify({ name: 'John', email: 'john@gmail.com' }));
 window.localStorage.setItem('userWalletTypes', JSON.stringify(['apple', 'google', 'cc']));
 
 // Get item from localStorage
@@ -66,12 +66,53 @@ window.localStorage.clear(); // clear everything from localStorage
     3. Console log users browser innerWidth and innerHeight
 
     4. Reload the page after 10 seconds to start again. => setTimeout, location.reload()
+
+    Bonus:
+
+    5. Ask if user wants to go to different page?
+        5.1. 'YES' => redirect to that page
+        5.2. "NO" => reload the page 
 */
 
+// Solution
 
-if(username || username === '') {
-    // do all logic 2,3,4
-    alert(username) // null or empty
+// Ask user a name
+const userName = window.prompt('What is your name?');
+// console.log(userName);
+
+if (userName && userName.length > 0) {
+    window.alert(`Hi ${userName}. Welcome to our webpage!`);
+
+    // Confirm if user wants to continue
+    const doesUserWantsToContinue = window.confirm('Do you want continue browsing our webpage?');
+    if (doesUserWantsToContinue) {
+        window.alert('You have chosen to continue');
+    } else {
+        window.alert('You canceled the action')
+    }
+
+    // Log user device dimensions
+    const userInnerHeight = window.innerHeight;
+    const userInnerWidth = window.innerWidth;
+    console.log(`You device dimension are height: ${userInnerHeight} and width: ${userInnerWidth}`);
+
+    // Warn user that page is going to reload
+    // console.log('Webpage will be reloaded or redirected in 10 seconds');
+
+    // Ask if user wants to go to different page
+    const doesUserWantsToRedirect = window.confirm('Do you want go to google.com?');
+    if (doesUserWantsToRedirect) {
+        console.log('Webpage will be redirected in 10 seconds');
+        setTimeout(() => {
+            window.open('https://google.com');
+        }, 10000)
+    } else {
+        // Reload the page and start again
+        console.log('Webpage will be reloaded in 10 seconds');
+        setTimeout(() => {
+            window.location.reload();
+        }, 10000);
+    }
 } else {
-    // bye bye
+    console.log('You didn\'t provided your name. Bye Bye!')
 }
