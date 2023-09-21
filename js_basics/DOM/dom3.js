@@ -156,6 +156,55 @@ boxEl.classList.remove('box'); // this will remove box from existing class names
 // or append
 parentElement.innerHTML += `<li>France</li>`;
 
+/**
+ * Create an element
+ * And append it to DOM
+ */
+
+const p2 = document.createElement('p');
+console.log(p2); // <p></p>
+
+// add a content to p2 element
+// 1st way
+p2.innerHTML = 'Box 2'; 
+console.log(p2); // <p>Box 2</p>
+
+// 2nd way
+// const textNode = document.createTextNode('Box 3'); // #text
+// p2.appendChild(textNode); // <p>Box 3</p>
+console.log(p2);
+
+// Append p2 to box element
+boxEl.append(p2);
+
+// append -> takes node or text(string)
+// appendChild -> only takes text(string)
+
+parentElement.append(p2); // add p2 inside ul element
+
+/*
+    Activity
+
+    Objective: Practice DOM 
+    
+    Instructions: Create a simple TODO List
+
+
+    1. Ask user a list
+
+    2. Create an element based on users input
+
+    3. Show that in the DOM(UI)
+
+    Bonus: Ask 3 lists from user
+
+*/
+
+
+
+
+
+
 
 
 
