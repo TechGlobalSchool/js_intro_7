@@ -28,4 +28,18 @@ localStorage
 
 
 
+RECAP: 09-20-2023 
+
+id => getElementById() - gets the single element
+class => getElementsByClassName() - gets all elements with same classname in HTMLCollection
+tag => getElementsByTagName() - gets all same elements in HTMLCollection
+querySelector(), querySelectorAll() -> gets elements/nodes using id, class or tag
+
+
+09-20-2023 DOM Traverse
+
+
+
+
+
 
