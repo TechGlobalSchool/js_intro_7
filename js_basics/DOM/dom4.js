@@ -128,7 +128,7 @@ const formEl = document.querySelector('form');
 // keypress
 formEl.addEventListener('keypress', (event) => {
     event.preventDefault();
-    if(event.code === 13) {
+    if(event.key === "Enter") {
         console.log('Form successfully submitted!');
         console.log({
             name: 'Joe',
