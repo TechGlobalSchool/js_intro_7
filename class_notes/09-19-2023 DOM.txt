@@ -38,6 +38,27 @@ querySelector(), querySelectorAll() -> gets elements/nodes using id, class or ta
 
 09-20-2023 DOM Traverse
 
+To get all child nodes: element.childNodes => HTMLCollection
+To get all the child elements: element.children => HTMLCollection
+
+To get a parent node: element.parentNode
+To get a parent element: element.parentElement
+
+To next sibling element: element.nextElementSibling
+To get previous element: element.previousElementSibing
+
+To get element attributes:
+element.attributeName => ex: attributeName == src, alt, id, class
+element.getAttribute('attr name');
+
+To set element attribute:
+element.attributName = value;
+element.setAttribute('name', value);
+
+
+STYLING
+Everything lives inside element.style object
+
 
 
 
