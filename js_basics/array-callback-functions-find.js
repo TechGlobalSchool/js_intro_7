@@ -51,7 +51,7 @@ console.log(result);
 const result = {
     value: things.find(x => x.length === 3),
     index: things.findIndex(x => x.length === 3)
-};
+}; 
 
 console.log(result);
 */
